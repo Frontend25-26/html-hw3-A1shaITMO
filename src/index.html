@@ -7,8 +7,172 @@
     <title>HW3</title>
 </head>
 <body>
-    <div id="app">
-        
+<main class="quiz-container">
+    <h1>Квиз по HTML, CSS и JS</h1>
+
+    <input type="checkbox" id="showResults"/>
+
+    <div class="quiz-content">
+        <section class="quiz-card">
+            <h2>1. Какой тег лучше не использовать?</h2>
+            <div class="answers">
+                <label class="option correct">
+                    <input type="radio" name="q1">
+                    <span><code>&lt;i&gt;</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q1">
+                    <span><code>&lt;div&gt;</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q1">
+                    <span><code>&lt;a&gt;</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q1">
+                    <span><code>&lt;h6&gt;</code></span>
+                </label>
+            </div>
+        </section>
+
+        <section class="quiz-card">
+            <h2>2. Какие комбинаторы есть в CSS? (2 варианта ответа)</h2>
+            <div class="answers">
+                <label class="option correct">
+                    <input type="checkbox" name="q2">
+                    <span><code>||</code></span>
+                </label>
+                <label class="option correct">
+                    <input type="checkbox" name="q2">
+                    <span><code>~</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="checkbox" name="q2">
+                    <span><code>^</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="checkbox" name="q2">
+                    <span><code>!</code></span>
+                </label>
+            </div>
+        </section>
+
+        <section class="quiz-card">
+            <h2>3. Какой тег HTML обозначает нумерованный список?</h2>
+            <div class="answers">
+                <label class="option wrong">
+                    <input type="radio" name="q3">
+                    <span><code>&lt;li&gt;</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q3">
+                    <span><code>&lt;ul&gt;</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q3">
+                    <span><code>&lt;ordered&gt;</code></span>
+                </label>
+                <label class="option correct">
+                    <input type="radio" name="q3">
+                    <span><code>&lt;ol&gt;</code></span>
+                </label>
+            </div>
+        </section>
+
+        <section class="quiz-card">
+            <h2>4. Что выведется в консоль?</h2>
+            <img src="../images/q4.png" alt="q4">
+            <div class="answers">
+                <label class="option wrong">
+                    <input type="radio" name="q4">
+                    <span><code>Victor</code> и <code>28</code></span>
+                </label>
+                <label class="option correct">
+                    <input type="radio" name="q4">
+                    <span><code>undefined</code> и <code>ReferenceError</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q4">
+                    <span><code>Victor</code> и <code>undefined</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q4">
+                    <span><code>ReferenceError</code> и <code>28</code></span>
+                </label>
+            </div>
+        </section>
+
+        <section class="quiz-card">
+            <h2>5. Какие утверждения про WeakMap верны? (2 варианта ответа)</h2>
+            <div class="answers">
+                <label class="option wrong">
+                    <input type="checkbox" name="q5">
+                    <span>В качестве ключа можно использовать только строки</span>
+                </label>
+                <label class="option correct">
+                    <input type="checkbox" name="q5">
+                    <span>В качестве ключа можно использовать только объекты</span>
+                </label>
+                <label class="option wrong">
+                    <input type="checkbox" name="q5">
+                    <span>Есть методы <code>keys()</code>,<code>values()</code> и <code>entries()</code></span>
+                </label>
+                <label class="option correct">
+                    <input type="checkbox" name="q5">
+                    <span>Отсутствует свойство <code>size</code></span>
+                </label>
+            </div>
+        </section>
+
+        <section class="quiz-card">
+            <h2>6. Какого псевдокласса не существует?</h2>
+            <div class="answers">
+                <label class="option wrong">
+                    <input type="radio" name="q6">
+                    <span><code>:host</code></span>
+                </label>
+                <label class="option correct">
+                    <input type="radio" name="q6">
+                    <span><code>:clicked</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q6">
+                    <span><code>:hover</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q6">
+                    <span><code>:future</code></span>
+                </label>
+            </div>
+        </section>
+
+        <section class="quiz-card">
+            <h2>7. Что выведется в консоль?</h2>
+            <img src="../images/q7.png" alt="q7">
+            <div class="answers">
+                <label class="option wrong">
+                    <input type="radio" name="q7">
+                    <span><code>0</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q7">
+                    <span><code>1</code></span>
+                </label>
+                <label class="option correct">
+                    <input type="radio" name="q7">
+                    <span><code>5</code></span>
+                </label>
+                <label class="option wrong">
+                    <input type="radio" name="q7">
+                    <span><code>NaN</code></span>
+                </label>
+            </div>
+        </section>
     </div>
+
+    <div class="results">
+        <label for="showResults" class="show-btn" id="showBtn">Показать результаты</label>
+    </div>
+</main>
 </body>
 </html>
